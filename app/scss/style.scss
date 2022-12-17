@@ -70,6 +70,17 @@ footer {
   border-bottom: 1px solid #ececec;
   display: flex;
 
+  &__link,
+  &__adress,
+  &__email,
+  &__phone {
+    display: block;
+    margin-bottom: 15px;
+    &:hover {
+      color: $accent;
+    }
+  }
+
   &__contact {
     width: 250px;
     margin-right: 50px;
@@ -124,11 +135,6 @@ footer {
     @extend %roboto-400;
     font-size: 22px;
     line-height: 1;
-  }
-
-  &__link {
-    display: block;
-    margin-bottom: 15px;
   }
 
   &__text {
