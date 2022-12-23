@@ -186,6 +186,10 @@
     padding: 60px 30px;
     width: 370px;
     box-shadow: 20px 0px 60px 0px rgba(202, 202, 202, 0.35);
+    transition: all 0.5s ease;
+    &:hover {
+      transform: scale(1.1);
+    }
   }
 
   &__item-title {
@@ -218,6 +222,11 @@
     background-position: center center;
     padding-top: 30px;
     padding-left: 15px;
+    transition: all 0.7s ease;
+    &:hover {
+      transform: translateY(-20px);
+    }
+
     &:nth-child(1) {
       grid-row: span 2;
       .categories__item-subtitle,
@@ -268,6 +277,57 @@
     color: $title;
     @extend %roboto-400;
     transition: all 0.3s ease;
+  }
+}
+
+.video-fashion {
+  background-color: $bg;
+  background-image: url(../images/decor/pattenrn-video.svg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  padding: 125px 0;
+
+  &__inner {
+    display: flex;
+  }
+
+  &__popup {
+    margin-right: 60px;
+    max-width: 530px;
+    height: 489px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+
+  &__content {
+    max-width: 570px;
+  }
+
+  &__subtitle {
+    padding-top: 75px;
+    font-size: 22px;
+    color: $accent;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+  }
+
+  .title {
+    @extend %title;
+    text-align: start;
+  }
+
+  &__text {
+    margin-bottom: 55px;
+  }
+
+  &__link {
+    @extend %btn;
   }
 }
 
