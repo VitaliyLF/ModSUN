@@ -4,6 +4,8 @@
 @import 'libs';
 @import 'global';
 
+// start main page
+
 .header {
   padding: 40px 0;
   &__inner {
@@ -751,6 +753,25 @@ footer {
 
   &__accept-img {
     margin-left: 25px;
+  }
+}
+
+// end main page
+
+// start login page
+.top {
+  &__container {
+    max-width: 1700px;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    padding: 130px 0 140px;
+    text-align: center;
+  }
+
+  &__title {
+    @extend %title;
   }
 }
 

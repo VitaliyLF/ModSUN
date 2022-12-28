@@ -4,7 +4,7 @@ $(function () {
     arrows: false,
     fade: true,
     autoplay: true,
-    autoplaySpeed: 1500,
+    autoplaySpeed: 750,
   })
 
   $('.star').rateYo({
