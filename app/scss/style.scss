@@ -758,7 +758,7 @@ footer {
 
 // end main page
 
-// start login page
+// start login and register page
 .top {
   &__container {
     max-width: 1700px;
@@ -779,7 +779,6 @@ footer {
   padding-top: 100px;
   max-width: 570px;
   margin: 0 auto 115px;
-  
 
   &__links {
     text-align: center;
@@ -801,7 +800,6 @@ footer {
   &__label {
     display: block;
     margin-bottom: 30px;
-
   }
 
   &__input {
@@ -842,4 +840,38 @@ footer {
   }
 }
 
+// end login and register page
+
+// start 404 page
+.page-404 {
+  padding: 110px 0 120px;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__content {
+    max-width: 570px;
+    width: 100%;
+  }
+
+  &__title {
+    @extend %title;
+    color: #28384f;
+    margin-bottom: 40px;
+  }
+
+  &__text {
+    margin-bottom: 55px;
+    max-width: 470px;
+  }
+
+  &__link {
+    @extend %btn;
+    padding: 14px 35px;
+  }
+}
+
+// end 404 page
 @import 'media';
