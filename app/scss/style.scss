@@ -779,6 +779,7 @@ footer {
   padding-top: 100px;
   max-width: 570px;
   margin: 0 auto 115px;
+  
 
   &__links {
     text-align: center;
@@ -800,6 +801,7 @@ footer {
   &__label {
     display: block;
     margin-bottom: 30px;
+
   }
 
   &__input {
@@ -810,10 +812,11 @@ footer {
     margin-top: 4px;
     height: 60px;
     padding: 0 15px;
-    &:nth-child(3) {
-      background-color: #fff;
-      padding: 0;
-    }
+  }
+
+  &__input--checkbox {
+    background-color: #fff;
+    padding: 0;
   }
 
   &__btn {
@@ -828,10 +831,14 @@ footer {
     cursor: pointer;
   }
 
-  &__error {
+  &__lost {
     display: inline-block;
     margin-top: 12px;
     color: $accent;
+  }
+
+  &__text {
+    margin-bottom: 25px;
   }
 }
 
