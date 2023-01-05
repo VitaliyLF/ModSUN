@@ -916,6 +916,10 @@ footer {
     width: 260px;
     height: 50px;
     padding: 0 5px 0 15px;
+    outline: transparent;
+    &::-webkit-search-cancel-button {
+      display: none;
+    }
   }
 
   &__btn {
@@ -1002,11 +1006,7 @@ footer {
   }
 
   &__input {
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    clip: rect(0 0 0 0);
-    position: absolute;
+    @extend %checkbox-hidden;
     &:checked + .filter-color__checkbox {
       background-image: url(../images/icons/checkon.svg);
       background-position: center;
@@ -1039,6 +1039,86 @@ footer {
   }
   &__checkbox--purple {
     background-color: #923899;
+  }
+}
+
+.filter-size {
+  &__label {
+    padding-left: 35px;
+    margin-bottom: 20px;
+    display: block;
+  }
+
+  &__input {
+    @extend %checkbox-hidden;
+    &:checked + .filter-size__checkbox {
+      background-image: url(../images/icons/check-size.svg);
+      border: none;
+      & + .filter-size__text {
+        color: $accent;
+      }
+    }
+  }
+
+  &__checkbox {
+    width: 20px;
+    height: 20px;
+    border: 1px solid $default;
+    position: absolute;
+    margin-left: -35px;
+    margin-top: 3px;
+    border-radius: 50%;
+  }
+}
+
+.filter-category {
+  &__label {
+    display: block;
+    margin-bottom: 15px;
+    cursor: pointer;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__input {
+    @extend %checkbox-hidden;
+    &:checked + .filter-category__checkbox {
+      background-color: $accent;
+      color: #fff;
+    }
+  }
+
+  &__checkbox {
+    background-color: #f6f6f6;
+    color: $title;
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 20px;
+  }
+}
+
+.filter-popular {
+  &__label {
+    display: inline-block;
+    margin-bottom: 20px;
+    margin-right: 8px;
+    padding: 10px 0;
+    cursor: pointer;
+  }
+
+  &__input {
+    @extend %checkbox-hidden;
+    &:checked + .filter-popular__checkbox {
+      background-color: $accent;
+      border-color: $accent;
+      color: #fff;
+    }
+  }
+
+  &__checkbox {
+    border: 1px solid $default;
+    padding: 10px 20px;
   }
 }
 
