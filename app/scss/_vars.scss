@@ -25,6 +25,7 @@ $bg: #f6f6f6;
 
 %btn {
   padding: 12px 26px;
+  border: none;
   text-transform: uppercase;
   color: #fff;
   background-color: $accent;
@@ -49,7 +50,8 @@ $bg: #f6f6f6;
   margin: 0 auto 55px;
 }
 
-%checkbox-hidden {
+%checkbox-hidden,
+%radio-hidden {
   width: 1px;
   height: 1px;
   overflow: hidden;
