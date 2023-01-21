@@ -12,9 +12,7 @@ $(function () {
     $('.product-tabs__top-item').removeClass('product-tabs__top-item--active')
     $(this).addClass('product-tabs__top-item--active')
 
-    $('.product-tabs__content-item').removeClass(
-      'product-tabs__content-item--active'
-    )
+    $('.product-tabs__content-item').removeClass('product-tabs__content-item--active')
     $($(this).attr('href')).addClass('product-tabs__content-item--active')
   })
 
@@ -34,9 +32,7 @@ $(function () {
   })
 
   $('.shop-content__filter-btn').on('click', function () {
-    $('.shop-content__filter-btn').removeClass(
-      'shop-content__filter-btn--active'
-    )
+    $('.shop-content__filter-btn').removeClass('shop-content__filter-btn--active')
     $(this).addClass('shop-content__filter-btn--active')
   })
 
@@ -124,4 +120,8 @@ $(function () {
 
   var deadline = $('.promo__clock').attr('data-time')
   initializeClock('promo__clock', deadline)
+
+  let map
+
+
 })
