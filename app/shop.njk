@@ -4,14 +4,29 @@
     <meta charset="UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Shop Page</title>
+    <title>Log in</title>
     <link rel="stylesheet" href="css/shop.min.css"/>
   </head>
   <body>
     {% include 'app/module/_header/_header.html' %}
     <main class="main">
-      {% include 'app/module/_shop-page/_top/_top.html' %}
-      {% include 'app/module/_shop-page/_shop/_shop.html' %}
+      {% include 'app/module/_top/_top.html' %}
+      <section class="shop">
+        <div class="container">
+          <div class="shop__inner">
+            <div class="shop__filters filter">
+              {% include 'app/module/_filter-search/_filter-search.html' %}
+              {% include 'app/module/_filter-price/_filter-price.html' %}
+              {% include 'app/module/_filter-color/_filter-color.html' %}
+              {% include 'app/module/_filter-size/_filter-size.html' %}
+              {% include 'app/module/_filter-category/_filter-category.html' %}
+              {% include 'app/module/_filter-popular/_filter-popular.html' %}
+              {% include 'app/module/_shop-content/_shop-content.html' %}
+            </div>
+            {% include 'app/module/_pagination/_pagination.html' %}
+          </div>
+        </div>
+      </section>
     </main>
     {% include 'app/module/_footer/_footer.html' %}
     <script src="js/main.min.js"></script>

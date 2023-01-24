@@ -5,5 +5,11 @@
 @import 'global';
 @import '../module/_header/header';
 @import '../module/_footer/footer';
-@import '../module/_blog-page-all/_top/top';
-@import '../module/_blog-page-all/_blog-page/blog-page';
+@import '../module/_top/top';
+@import '../module/_blog-page/blog-page';
+@import '../module/_filter-search/filter-search';
+@import '../module/_filter/filter';
+@import '../module/_person/person';
+@import '../module/_latest-post/latest-post';
+@import '../module/_filter-category/filter-category';
+@import '../module/_filter-popular/filter-popular';
