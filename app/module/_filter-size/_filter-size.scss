@@ -1,0 +1,30 @@
+.filter-size {
+  &__label {
+    padding-left: 35px;
+    margin-bottom: 20px;
+    display: block;
+  }
+
+  &__input {
+    @extend %checkbox-hidden;
+
+    &:checked + .filter-size__checkbox {
+      background-image: url(../images/icons/check-size.svg);
+      border: none;
+
+      & + .filter-size__text {
+        color: $accent;
+      }
+    }
+  }
+
+  &__checkbox {
+    width: 20px;
+    height: 20px;
+    border: 1px solid $default;
+    position: absolute;
+    margin-left: -35px;
+    margin-top: 3px;
+    border-radius: 50%;
+  }
+}

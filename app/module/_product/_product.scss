@@ -1,0 +1,27 @@
+.product {
+  padding: 105px 0 120px;
+  text-align: center;
+
+  .title {
+    @extend %title;
+  }
+
+  .text {
+    @extend %text;
+  }
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 45px 30px;
+  }
+
+  &__link {
+    text-transform: uppercase;
+    color: $title;
+    display: inline-block;
+    border: 1px solid $accent;
+    padding: 14px 27px;
+    margin-top: 55px;
+  }
+}
