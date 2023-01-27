@@ -65,5 +65,58 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 620px) {
+  .promo {
+    padding: 60px 0;
+    background-image: none;
+    background-color: #ececec;
+    &__clock {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    &__clock-item {
+      margin: 20px 40px;
+    }
+  }
+  .parthers {
+    padding: 60px 0;
+    &__list {
+      height: auto;
+      justify-content: center;
+    }
+    &__item {
+      margin: 10px 35px;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .parthers {
+    &__item {
+      margin: 10px 22px;
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .promo {
+    &__clock {
+      margin-top: 30px;
+    }
+    &__clock-item {
+      margin: 8px;
+    }
+    &__link {
+      margin-top: 30px;
+    }
+  }
+  .parthers {
+    &__item {
+      margin: 10px 25px;
+    }
   }
 }

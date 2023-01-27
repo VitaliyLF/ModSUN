@@ -214,3 +214,20 @@
 .star {
   margin: 0 auto;
 }
+
+@media (max-width: 1050px) {
+  .product-item {
+    &__img-box {
+      height: 305px;
+    }
+  }
+}
+
+@media (max-width: 620px) {
+  .product-item {
+    max-width: 100%;
+    &__images {
+      width: 100%;
+    }
+  }
+}
