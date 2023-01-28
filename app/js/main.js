@@ -3,6 +3,10 @@ $(function () {
     $('.menu__list').toggleClass('menu__list--active')
   })
 
+  $('.shop__filter-btn').on('click', function () {
+    $('.shop__filters').slideToggle()
+  })
+
   $('.footer__hidden').on('click', function () {
     $(this).next().slideToggle()
     $(this).toggleClass('footer-top__title--active')
@@ -35,11 +39,22 @@ $(function () {
     vertical: true,
     draggable: false,
   })
+
   $('.product-slide__big').slick({
     asNavFor: '.product-slide__thumb',
     draggable: false,
     arrows: false,
     fade: true,
+    responsive: [
+      {
+        breakpoint: 992,
+        settings: {
+          draggable: true,
+          autoplay: true,
+          autoplaySpeed: 750,
+        },
+      },
+    ],
   })
 
   $('.shop-content__filter-btn').on('click', function () {
@@ -51,10 +66,12 @@ $(function () {
 
   $('.button-list').on('click', function () {
     $('.product-item').addClass('product-item--list')
+    $('.shop-content__inner').addClass('shop-content__nogrid')
   })
 
   $('.button-grid').on('click', function () {
     $('.product-item').removeClass('product-item--list')
+    $('.shop-content__inner').removeClass('shop-content__nogrid')
   })
 
   $('.select-style, .product-one__num').styler({
