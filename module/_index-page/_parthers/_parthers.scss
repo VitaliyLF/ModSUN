@@ -1,0 +1,9 @@
+.parthers {
+  padding: 120px 0;
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

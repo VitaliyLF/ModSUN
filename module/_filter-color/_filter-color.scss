@@ -1,0 +1,59 @@
+.filter-color {
+  &__label {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ececec;
+    display: flex;
+    justify-content: space-between;
+
+    &:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+  }
+
+  &__label + &__label {
+    padding-top: 20px;
+  }
+
+  &__input {
+    @extend %checkbox-hidden;
+
+    &:checked + .filter-color__checkbox {
+      background-image: url(../images/icons/checkon.svg);
+      background-position: center;
+      background-size: cover;
+    }
+  }
+
+  &__checkbox {
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    margin-left: -16px;
+    margin-top: 7px;
+  }
+
+  &__checkbox--blue {
+    background-color: #00aeef;
+  }
+
+  &__checkbox--red {
+    background-color: #f52574;
+  }
+
+  &__checkbox--green {
+    background-color: #24d4ac;
+  }
+
+  &__checkbox--orange {
+    background-color: #ff7e00;
+  }
+
+  &__checkbox--black {
+    background-color: #000000;
+  }
+
+  &__checkbox--purple {
+    background-color: #923899;
+  }
+}
